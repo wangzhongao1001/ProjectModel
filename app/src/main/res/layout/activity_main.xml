@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/anim_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorButton"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rb1"
+            android:gravity="center"
+            android:text="题库"
+
+            />
+
+        <RadioButton
+            android:id="@+id/butt_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb3"
+            android:gravity="center"
+            android:text="商城"
+
+            />
+
+        <RadioButton
+            android:id="@+id/butt_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb2"
+            android:gravity="center"
+            android:text="课程"
+
+            />
+
+        <RadioButton
+            android:id="@+id/butt_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb4"
+            android:gravity="center"
+            android:text="论坛"
+
+            />
+
+        <RadioButton
+            android:id="@+id/butt_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb5"
+            android:gravity="center"
+            android:text="我"
+
+            />
+
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fragme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/anim_rg" />
+
+</RelativeLayout>
